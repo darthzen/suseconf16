@@ -7,7 +7,7 @@
     - makedirs: True
 
 "Deploy master configs":
-  file.recures:
+  file.recurse:
     - name: '/etc/salt/master.d/'
     - source: salt://files/master-d-configs/
 
