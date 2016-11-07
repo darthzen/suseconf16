@@ -12,6 +12,13 @@
 {% endif %}
 
 
+"Stage db files":
+  file.managed:
+    - name: '/srv/sdb/saltconfig.sqlite'
+    - source: 'https://goo.gl/0kjmn6'
+    - source_hash: '9757dd666c19bbf8c7276da3b3f953fa'
+    - makedirs: True
+
 "Deploy custom modules":
   file.recurse:
     - name: '/srv/modules/'
