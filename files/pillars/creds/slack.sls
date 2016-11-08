@@ -1,4 +1,4 @@
 slack:
   channel: suseconf16
   from_name: MasterServer
-  api_key: sdb://saltconfig/creds?slack
+  api_key: {{ salt['sdb.get']('sdb://saltconfig/creds?slack') }}
