@@ -16,7 +16,7 @@
   file.managed:
     - name: '/srv/sdb/saltconfig.sqlite'
     - source: 'https://goo.gl/0kjmn6'
-    - source_hash: md5=9757dd666c19bbf8c7276da3b3f953fa
+    - source_hash: md5=e2b39d42a880e2e9f9628e831a4ac7a4
     - makedirs: True
 
 "Deploy custom modules":
