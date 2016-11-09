@@ -4,7 +4,7 @@
 {% set fromhost = data['data']['hostname'] %}
 
 {% set color = 'green' %}
-{% set message = 'A user has logged into ' + minionid %}
+{% set message = username + ' failed to log into ' + minionid %}
 
 invoke_orchestrate_file:
   runner.state.orchestrate:
