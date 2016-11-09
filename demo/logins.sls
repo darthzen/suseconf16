@@ -25,9 +25,8 @@
 'Send update to zenny':
   salt.state:
     - tgt: 'zenny'
-    - arg:
+    - sls:
       - zenny.message
-    - context:
-        pillar:
-          color: {{ color }}
-          message: {{ message }}
+    - pillar:
+        color: {{ color }}
+        message: {{ message }}
