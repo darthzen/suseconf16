@@ -3,7 +3,7 @@
 {% set username = data['data']['user'] %}
 {% set fromhost = data['data']['hostname'] %}
 
-{% set color = 'green' %}
+{% set color = 'red' %}
 {% set message = username + ' failed to log into ' + minionid %}
 
 invoke_orchestrate_file:
