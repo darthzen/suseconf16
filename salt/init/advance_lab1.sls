@@ -1,4 +1,4 @@
-# Push all file configs for advance_lab_1
+# Push all file configs for advanced_lab_1
 
 {% if grains['os_family'] == 'RedHat' %}
     {% set filename = '/usr/lib/python2.7/site-packages/salt' %}
@@ -41,7 +41,3 @@
   file.managed:
     - name: {{ filename }}/config/__init__.py
     - source: salt://files/fixes/config-__init__.py
-
-"Restart master":
-  cmd.run:
-    - name: echo service salt-master restart | at now + 1 minute
