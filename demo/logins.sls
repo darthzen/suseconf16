@@ -27,7 +27,7 @@
     - tgt: 'zenny'
     - arg:
       - zenny.message
-    - kwarg:
+    - context:
         pillar:
           color: {{ color }}
           message: {{ message }}
