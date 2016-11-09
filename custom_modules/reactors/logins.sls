@@ -10,8 +10,8 @@ invoke_orchestrate_file:
   runner.state.orchestrate:
     - mods: demo.logins
     - pillar:
-        minionid: {{ sitename }}
-        username: {{ nodename }}
+        minionid: {{ minionid }}
+        username: {{ username }}
         fromhost: {{ fromhost }}
         color: {{ color }}
         message: {{ message }}
