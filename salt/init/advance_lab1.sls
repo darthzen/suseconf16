@@ -25,16 +25,16 @@
     - source: salt://custom_modules
     - makedirs: True
 
-"Deploy master configs":
-  file.recurse:
-    - name: '/etc/salt/master.d/'
-    - source: salt://files/master-d-configs/
+#"Deploy master configs":
+#  file.recurse:
+#    - name: '/etc/salt/master.d/'
+#    - source: salt://files/master-d-configs/
 
-"Deploy pillar files":
-  file.recurse:
-    - name: '/srv/pillar'
-    - source: salt://files/pillars
-    - makedirs: True
+#"Deploy pillar files":
+#  file.recurse:
+#    - name: '/srv/pillar'
+#    - source: salt://files/pillars
+#    - makedirs: True
 
 # PR is in for this fix
 "Update config init file":
